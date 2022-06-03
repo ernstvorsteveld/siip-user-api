@@ -1,0 +1,10 @@
+= User API
+
+== Keycloak
+
+.Well known endpoint
+[source,bash}
+----
+http://localhost:80808/auth/realms/{realm}/.well-known/openid-configuration
+----
+
