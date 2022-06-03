@@ -27,4 +27,5 @@ public interface UserOperations {
     @DeleteMapping(value = "/{userId}")
     void delete(@PathVariable
                 @Pattern(regexp = "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$", message = "User id is invalid")
+                String userId);
 }
